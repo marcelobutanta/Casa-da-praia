@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Luxo à Venda em Itanhaém | Perto da Praia</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Lora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Swiper.js CSS for the carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-lora {
+            font-family: 'Lora', serif;
+        }
+        /* Custom styles for the image carousel */
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            background-color: #000; /* Black background for slides */
+        }
+        .swiper-slide img,
+        .swiper-slide video {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Use 'contain' to see the whole image/video */
+        }
+        /* Styling for navigation arrows */
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff !important;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 22px !important;
+            font-weight: 900;
+        }
+        /* Styling for pagination dots */
+        .swiper-pagination-bullet {
+            background: rgba(255, 255, 255, 0.7);
+        }
+        .swiper-pagination-bullet-active {
+            background: #ffffff !important;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-30">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900 font-lora">Imóvel de Alto Padrão</h1>
+            <a href="#contato" class="hidden md:inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">Agendar Visita</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-8">
+
+        <!-- Title and Main Info Section -->
+        <section class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold font-lora text-gray-900 mb-2">Sua Casa dos Sonhos em Itanhaém</h2>
+            <p class="text-xl text-gray-600 mb-6">Conforto, espaço e a brisa do mar a poucos passos de você.</p>
+            <div class="flex justify-center items-center space-x-6 md:space-x-10 text-lg">
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l-6-2m0 0l-3 9" /></svg>
+                    <span>04 Dorm(02 Suítes)</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    <span>250m da Praia</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 1v4m0 0h-4m4 0l-5-5" /></svg>
+                    <span>Piscina / Espaço Gourmet</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image & Video Gallery Carousel -->
+        <section class="mb-12">
+            <!-- Swiper -->
+            <div class="swiper-container mySwiper h-[350px] md:h-[500px] lg:h-[600px] rounded-lg shadow-xl overflow-hidden">
+                <div class="swiper-wrapper">
+                    <!-- Adicione suas 13 fotos aqui -->
+                    <div class="swiper-slide"><img src="https://placehold.co/1200x800/003366/FFFFFF?text=Foto+1:+Fachada" alt="Fachada principal do imóvel" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/1200x800/1E40AF/FFFFFF?text=Foto+2:+Frente" alt="Frente do imóvel" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/1200x800/1D4ED8/FFFFFF?text=Foto+3:+Garagem" alt="Garagem" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/1200x800/3B82F6/FFFFFF?text=Foto+4:+Sala de estar" alt="Sala de estar" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/1200x800/60A5FA/FFFFFF?text=Foto+5:+Sala de estar" alt="Sala de estar" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/1200x800/93C5FD/FFFFFF?text=Foto+6:+Cozinha" alt="Cozinha" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/1200x800/BFDBFE/FFFFFF?text=Foto+7:+Sala de TV" alt="Sala de TV" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/1200x800/002244/FFFFFF?text=Foto+8:+Area da Piscina" alt="Area da Piscina" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/1200x800/043a6b/FFFFFF?text=Foto+9:+Fachada dos fundos" alt="Fachada dos fundos" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/1200x800/085191/FFFFFF?text=Foto+10:+Vista+da+Varanda" alt="Vista+da+Varanda" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/1200x800/0b68b8/FFFFFF?text=Foto+11:+Churrasqueira e Forno de pizza" alt="Churrasqueira e Forno de pizza" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/1200x800/3b82f6/FFFFFF?text=Foto+12:+Suite 02" alt="Suite 02" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/1200x800/6ea8f8/FFFFFF?text=Foto+13:+Banheiro suite 02" alt="Banheiro suite 02" /></div>
+                    
+                    <!-- VÍDEO SLIDE -->
+                    <!-- Substitua o 'src' pelo link do seu vídeo .MP4 -->
+                    <div class="swiper-slide">
+                        <video controls src="https://www.w3schools.com/html/mov_bbb.mp4" poster="https://placehold.co/1200x800/001122/FFFFFF?text=Clique+para+assistir+ao+vídeo">
+                            Seu navegador não suporta a tag de vídeo.
+                        </video>
+                    </div>
+                </div>
+                <!-- Navigation Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Pagination Dots -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Property Details -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-12">
+            <!-- Description -->
+            <div class="lg:col-span-2 bg-white p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold font-lora mb-4">Descrição do Imóvel</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Viva o melhor que Itanhaém tem a oferecer nesta residência exclusiva de alto padrão. Localizada em um bairro tranquilo, a apenas 5 minutos de caminhada da praia, esta casa foi projetada para proporcionar o máximo de conforto e sofisticação para sua família.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Com ambientes amplos, iluminados e um acabamento impecável, o imóvel conta com uma área de lazer completa, incluindo piscina com cascata e um espaço gourmet perfeito para receber amigos. As suítes garantem privacidade e aconchego. Uma oportunidade única de investimento e qualidade de vida.
+                </p>
+            </div>
+            <!-- Key Features -->
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold font-lora mb-4">Destaques</h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>Piscina privativa com cascata</li>
+                    <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>Espaço gourmet com churrasqueira e forno de pizza</li>
+                    <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>04 Dorm(02 suites) / 04 Banheiros</li>
+                    <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>Garagem para 03 carros</li>
+                    <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>Sistema de segurança completo</li>
+                    <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>Acabamentos em porcelanato e granito</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato" class="bg-blue-700 text-white p-8 rounded-lg shadow-lg text-center">
+            <h3 class="text-3xl font-bold font-lora mb-4">Gostou deste imóvel?</h3>
+            <p class="mb-6 max-w-2xl mx-auto">Entre em contato para mais informações ou para agendar uma visita. Estamos prontos para atender você!</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <a href="tel:+551334274662" class="bg-white text-blue-700 font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition duration-300 w-full md:w-auto">Ligar Agora</a>
+                <a href="https://wa.me/5513996868585" target="_blank" class="bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition duration-300 w-full md:w-auto">Enviar WhatsApp</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 - Todos os direitos reservados.</p>
+            <p class="text-sm text-gray-400">CRECI: 25545-J</p>
+        </div>
+    </footer>
+
+    <!-- Swiper.js JS for the carousel -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            keyboard: {
+                enabled: true,
+            },
+        });
+
+        // Adiciona um evento para pausar o vídeo quando o slide muda.
+        swiper.on('slideChangeTransitionStart', function () {
+            var videos = document.querySelectorAll('.swiper-container video');
+            videos.forEach(function(video) {
+                if (!video.paused) {
+                    video.pause();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
